@@ -8,99 +8,98 @@
         body {
             margin: 0;
             font-family: Georgia, serif;
-            background-color: #f9f9f9;
+            background-color: #ffffff;
             color: #000;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 80px;
+            padding: 0;
         }
 
-        .name-box {
-            border: 1px solid black;
-            padding: 30px 50px;
-            font-size: 28px;
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 40px;
+            font-size: 32px;
             font-weight: bold;
-            text-align: center;
-            background-color: white;
         }
 
-        .photo {
-            margin-top: 30px;
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid #000;
+        .container {
+            display: flex;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            gap: 40px;
+        }
+
+        .left {
+            flex: 1;
+        }
+
+        .left img {
+            width: 220px;
+            border-radius: 0;
+            border: none;
+        }
+
+        .right {
+            flex: 2;
         }
 
         .bio {
-            max-width: 600px;
-            text-align: center;
-            margin-top: 30px;
             font-size: 16px;
             line-height: 1.6;
+            margin-bottom: 30px;
         }
 
-        .links {
-            margin-top: 30px;
-            font-size: 16px;
+        .section {
+            margin-bottom: 20px;
         }
 
-        .links a {
-            margin: 0 15px;
+        .section a {
+            color: #003366;
             text-decoration: none;
-            color: #000;
         }
 
-        .links a:hover {
+        .section a:hover {
             text-decoration: underline;
         }
 
-        .papers {
-            max-width: 700px;
-            margin-top: 50px;
-            padding: 0 20px;
-            font-size: 16px;
-        }
-
-        .papers h2 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .papers p {
-            margin-bottom: 15px;
-        }
-
         .footer {
-            margin-top: 60px;
-            font-size: 12px;
-            color: #777;
+            font-size: 14px;
+            padding: 0 40px 40px;
+            max-width: 900px;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
-    <div class="name-box">Kipros Loftis</div>
-    <img src="profile.jpg" alt="Kipros Loftis" class="photo">
-    <div class="bio">
-        I have a PhD in Philosophy from the University of Nottingham. My main research interest is metaethics, and I am also interested in several other topics including applied ethics and the philosophy of religion. I have held temporary teaching positions at the University of Nicosia, and previously at the University of Cyprus. I am enthusiastic about teaching.
-    </div>
-    <div class="links">
-        <a href="CV.pdf" target="_blank">CV</a>
-    </div>
-    <div class="papers">
-        <h2>Published Papers</h2>
-        <p>
-            “The Question of the Existence of Moral Reasons and Two Kinds of Scepticisms.”<br>
-            <em>The Journal of Value Inquiry</em> (Forthcoming). 
-            <a href="Lofitis_JVI_2024.pdf" target="_blank">(published version)</a>
-        </p>
-        <p>
-            “Standard and Alternative Error Theories About Moral Reasons.”<br>
-            <em>Ratio</em>, 33(1), 37–45. 
-            <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/rati.12252" target="_blank">(link to journal)</a>
-        </p>
+    <div class="header">Kipros Loftis</div>
+    <div class="container">
+        <div class="left">
+            <img src="profile.jpg" alt="Kipros Loftis" style="width: 220px; border-radius: 50%; object-fit: contain; background-color: #f0f0f0;">
+        </div>
+        <div class="right">
+            <div class="bio">
+                I have a PhD in Philosophy from the University of Nottingham. My main research interest is metaethics, and I am also interested in several other topics including applied ethics and the philosophy of religion. I have held temporary teaching positions at the University of Nicosia, and previously at the University of Cyprus. I am enthusiastic about teaching.
+            </div>
+
+            <div class="section">
+                <p><a href="CV.pdf" target="_blank">My CV</a></p>
+                <p>My email: kipros.lofitis@gmail.com</p>
+            </div>
+
+            <div class="section">
+                <h2>Published Papers</h2>
+                <p>
+                    “The question of the existence of moral reasons and two kinds of scepticisms.”<br>
+                    <em>The Journal of Value Inquiry</em> (Forthcoming).
+                    <a href="Lofitis_JVI_2024.pdf" target="_blank">(published version)</a>
+                </p>
+                <p>
+                    <span style="font-variant: small-caps;">“Standard and alternative error theories about moral reasons.”</span><br>
+                    <em>Ratio</em>, 33(1), 37–45.
+                    <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/rati.12252" target="_blank">(link to journal)</a>
+                </p>
+            </div>
+        </div>
     </div>
     <div class="footer">© Kipros Loftis</div>
 </body>
