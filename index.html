@@ -1,12 +1,79 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Kipros Loftis</title>
+    <meta charset="UTF-8">
+    <title>Kipros Loftis</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background-color: #f9f9f9;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 80px;
+        }
+
+        .name-box {
+            border: 1px solid black;
+            padding: 30px 50px;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            background-color: white;
+        }
+
+        .photo {
+            margin-top: 30px;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #000;
+        }
+
+        .bio {
+            max-width: 600px;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .links {
+            margin-top: 30px;
+            font-size: 16px;
+        }
+
+        .links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 60px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-  <h1>Coming Soon</h1>
-  <p>This will be the academic homepage of Kipros Loftis.</p>
+    <div class="name-box">Kipros Loftis</div>
+    <img src="profile.jpg" alt="Kipros Loftis" class="photo">
+    <div class="bio">
+        I have a PhD in Philosophy from the University of Nottingham. My main research interest is metaethics, and I am also interested in several other topics including applied ethics and the philosophy of religion. I have held temporary teaching positions at the University of Nicosia, and previously at the University of Cyprus. I am enthusiastic about teaching.
+    </div>
+    <div class="links">
+        <a href="CV.pdf" target="_blank">CV</a>
+        <a href="#">Publications</a>
+    </div>
+    <div class="footer">© Kipros Loftis</div>
 </body>
 </html>
-Add basic index.html
